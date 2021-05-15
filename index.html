@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+</head>
+<body>
+<div class="container">
+    <header class="survey-header">
+        <h1 id="title" class="text-center">Survey About Favorite Movies</h1>
+        <p id="description" class="description text-center">Thank You Taking Part In This Survey.</p>
+    </header>
+     <form id="survey-form">
+        <div class="form-details">
+            <label id="name-label">Name</label><input type="text" id="name" required placeholder="Enter your Name" class="form-control"> <br>
+            <label id="email-label">Email</label><input type="email" id="email" required placeholder="Enter your email" class="form-control"> <br>
+            <label id="number-label">Age</label><input type="number" id="number" min="14" max="54" placeholder="Age" class="form-control"> <br>
+        </div>
+        <div class="form-group">
+            <p>Select your favorite genre.</p>
+            <select name="genre" id="dropdown" required>
+                <option disabled selected value>Select favorite genre</option>
+                <option value="thriller">Thriller</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+            </select>
+        </div>
+    
+        <div class="form-like">
+            <p>How much did you like this survey.</p>
+            <label><input type="radio" name="like" value="a lot" class="input-radio">A lot</label> <br>
+            <label><input type="radio" name="like" value="not much" class="input-radio">Not much</label> <br>
+            <label><input type="radio" name="like" value="nolike" class="input-radio">Did'nt like it</label> <br>
+        </div>
+        <div class="form-actors">
+            <p>Your favorite actors.
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label><input type="checkbox" name="favorite" value="tom cruise" class="input-checkbox">Tom Cruise</label><br>
+            <label><input type="checkbox" name="favorite" value="paul rudd" class="input-checkbox">Paul Rudd</label><br>
+            <label><input type="checkbox" name="favorite" value="brad pitt" class="input-checkbox">Brad Pitt</label><br>
+            <label><input type="checkbox" name="favorite" value="heath ledger" class="input-checkbox">Heath Ledger</label><br>
+        </div>
+        <div class="form-group">
+            <textarea name="comment" id="comments" placeholder="Enter Your Comments Here ....."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+    </form>
+</div>
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+</body>
+</html>
